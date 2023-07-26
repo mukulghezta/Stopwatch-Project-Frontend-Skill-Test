@@ -1,0 +1,60 @@
+/* main body styling */
+body{
+    background-color: rgb(29, 29, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* digits and buttons styling */
+#container{
+    color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px 7px grey;
+    padding: 20px;
+    
+}
+
+/* timer digits font styling */
+.digit{
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.txt{
+    font-size: 120px;
+}
+
+#btn-container{
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* buttons styling */
+.btn{
+    padding: 4px 15px;
+    font-size: 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+#start{
+    background-color: rgb(59, 165, 59);
+}
+
+#stop{
+    background-color: rgb(234, 69, 69);
+}
+
+#reset{
+    background-color: rgb(88, 115, 205);
+}
+
+
+
+
