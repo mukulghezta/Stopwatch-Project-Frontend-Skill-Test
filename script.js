@@ -33,6 +33,15 @@ function reset(){
 // main timer function
 function stopwatch(){
     if(timer==true){
+        
+        var hrString = hr < 10 ? "0" + hr : hr;
+        var minString = min < 10 ? "0" + min : min;
+        var secString = sec < 10 ? "0" + sec : sec;
+        
+        document.getElementById("hr").innerHTML = hrString;
+        document.getElementById("min").innerHTML = minString;
+        document.getElementById("sec").innerHTML = secString;
+
         sec = sec + 1;
 
         if(sec == 60){
@@ -45,14 +54,6 @@ function stopwatch(){
             min = 0;
             sec = 0;
         }
-
-        var hrString = hr < 10 ? "0" + hr : hr;
-        var minString = min < 10 ? "0" + min : min;
-        var secString = sec < 10 ? "0" + sec : sec;
-        
-        document.getElementById("hr").innerHTML = hrString;
-        document.getElementById("min").innerHTML = minString;
-        document.getElementById("sec").innerHTML = secString;
  
         setTimeout("stopwatch()", 1000)
     }
